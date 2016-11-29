@@ -1,3 +1,1 @@
-#! /bin/bash
-npm run build
-npm publish ./
+../bz-demo/publish.sh
