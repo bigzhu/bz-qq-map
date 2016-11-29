@@ -1,4 +1,4 @@
-<style lang="less">
+<style>
   #map_container {
     width: 100%;
     height: 100%;
