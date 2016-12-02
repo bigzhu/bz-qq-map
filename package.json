@@ -4,7 +4,7 @@
   "description": "bz-base",
   "main": "src/Bz.vue",
   "description": "bz-qq-map",
-  "main": "dist/main.js",
+  "main": "src/Bz.vue",
   "keywords": [
     "vue",
     "component",
