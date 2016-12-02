@@ -1,8 +1,9 @@
 {
   "name": "bz-qq-map",
   "version": "2.0.0",
+  "description": "bz-base",
+  "main": "src/Bz.vue",
   "description": "bz-qq-map",
-  "main": "dist/main.js",
   "keywords": [
     "vue",
     "component",
@@ -18,7 +19,8 @@
   },
   "homepage": "https://github.com/bigzhu/bz-qq-map#readme",
   "files": [
-    "dist"
+    "src/Bz.vue",
+    "src/assets"
   ],
   "scripts": {
     "dev": "node build/dev-server.js",
