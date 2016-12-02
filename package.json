@@ -1,13 +1,10 @@
 {
   "name": "bz-qq-map",
   "version": "2.0.0",
-<<<<<<< HEAD
   "description": "bz-base",
   "main": "src/Bz.vue",
-=======
   "description": "bz-qq-map",
   "main": "dist/main.js",
->>>>>>> d451cd74b767ccf83c73ab1c66bbb90a673b5ac4
   "keywords": [
     "vue",
     "component",
