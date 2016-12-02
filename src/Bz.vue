@@ -1,20 +1,3 @@
-<style>
-  #map_container {
-    width: 100%;
-    height: 100%;
-  }
-  /*屏蔽腾讯logo */
-  div[style="position: absolute; left: 0px; top: 0px;"], // 左上角按钮
-  div[style="position: absolute; z-index: 1000000; -webkit-user-select: none; left: 7px; bottom: 0px; "],
-  div[style="position: absolute; z-index: 1000000; margin: 2px 5px 0px 2px; left: 0px; bottom: 0px; "],
-  div[style="position: absolute; z-index: 1000000; -webkit-user-select: none; left: 7px; bottom: 0px;"],
-  div[style="position: absolute; z-index: 1000000; margin: 2px 5px 0px 2px; left: 0px; bottom: 0px;"],
-  div[style="position: absolute; z-index: 1000000; -webkit-user-select: none; left: 87px; bottom: 0px; "],
-  div[style="position: absolute; z-index: 1000000; -webkit-user-select: none; left: 87px; bottom: 0px;"] {
-    display: none;
-  }
-</style>
-
 <template>
   <div>
     <script-loader :scripts="scripts"></script-loader>
@@ -29,10 +12,8 @@
       config_map: {
         default: null
       },
-      map: {
-        type: Object,
-        required: true,
-        twoWay: true
+      value: {
+        required: true
       }
     },
     components: {
@@ -44,10 +25,11 @@
       return {
         scripts: [
           '//map.qq.com/api/js?v=2.exp&callback=initMap'
-        ]
+        ],
+        map: null
       }
     },
-    ready () {
+    mounted () {
       window.initMap = this.initMap
     },
     methods: {
@@ -67,7 +49,24 @@
         if (this.config_map) {
           this.config_map(this.map)
         }
+        this.$emit('input', this.map)
       }
     }
   }
 </script>
+<style>
+  #map_container {
+    width: 100%;
+    height: 100%;
+  }
+  /*屏蔽腾讯logo */
+  div[style="position: absolute; left: 0px; top: 0px;"], // 左上角按钮
+  div[style="position: absolute; z-index: 1000000; -webkit-user-select: none; left: 7px; bottom: 0px; "],
+  div[style="position: absolute; z-index: 1000000; margin: 2px 5px 0px 2px; left: 0px; bottom: 0px; "],
+  div[style="position: absolute; z-index: 1000000; -webkit-user-select: none; left: 7px; bottom: 0px;"],
+  div[style="position: absolute; z-index: 1000000; margin: 2px 5px 0px 2px; left: 0px; bottom: 0px;"],
+  div[style="position: absolute; z-index: 1000000; -webkit-user-select: none; left: 87px; bottom: 0px; "],
+  div[style="position: absolute; z-index: 1000000; -webkit-user-select: none; left: 87px; bottom: 0px;"] {
+    display: none;
+  }
+</style>

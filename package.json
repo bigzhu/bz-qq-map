@@ -1,8 +1,13 @@
 {
-  "name": "bz-base",
+  "name": "bz-qq-map",
   "version": "2.0.0",
+<<<<<<< HEAD
   "description": "bz-base",
   "main": "src/Bz.vue",
+=======
+  "description": "bz-qq-map",
+  "main": "dist/main.js",
+>>>>>>> d451cd74b767ccf83c73ab1c66bbb90a673b5ac4
   "keywords": [
     "vue",
     "component",
@@ -11,12 +16,12 @@
   "author": "bigzhu <vermiliondun@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bigzhu/bz-base.git"
+    "url": "git+https://github.com/bigzhu/bz-qq-map.git"
   },
   "bugs": {
-    "url": "https://github.com/bigzhu/bz-base/issues"
+    "url": "https://github.com/bigzhu/bz-qq-map/issues"
   },
-  "homepage": "https://github.com/bigzhu/bz-base#readme",
+  "homepage": "https://github.com/bigzhu/bz-qq-map#readme",
   "files": [
     "src/Bz.vue",
     "src/assets"
